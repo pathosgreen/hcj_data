@@ -20,12 +20,12 @@
         <p>마우스를 여기로 움직이세요</p>
         <p>0</p>
     </div>
-    <script>
-        var i=0;
-        $("div.out").mouseover(function(){
-            $("p:first", this).text("mouseover");
-            $("p:last",this).text(++i);
-        });
-    </script>
 </body>
+<script>
+    var i=0;
+    $("div.out").mouseover(function(){
+        $("p:first", this).text("mouseover");
+        $("p:last",this).text(++i);
+    });
+</script>
 </html>
