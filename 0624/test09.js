@@ -13,9 +13,9 @@ let family = {
     }
 };
 
-family.addFamily(30, 'chloe', 'aunt');
-family.addFamily(3, 'lyn', 'niece');
-family.addFamily(10, 'dangdangi', 'dog');
+family.addFamily(30, '클로에', '고모');
+family.addFamily(3, '린', '조카1');
+family.addFamily(10, '댕댕이', '강아지');
 
 let printMembers = function(){
     let members = family.members;
@@ -27,9 +27,9 @@ let printMembers = function(){
 printMembers();
 
 let members = family.members;
-members['nephew'] = {age:3, name:'hyun'};
-members.niece = {age:5, name: 'lyn'};
-delete members.aunt;
-delete members['dog'];
+members['조카2'] = {age:3, name:'현'};
+members.조카1 = {age:5, name: '린'};
+delete members.고모;
+delete members['강아지'];
 
 printMembers();
